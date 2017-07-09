@@ -1,0 +1,28 @@
+body {	
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrOqqEqf-vH_ZcGzg3F2e8bK7CGfWDVTS6uKSjsMl7u56t1eUH") repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+p {
+	font-family: 'Courgette', cursive;
+	font-size: 18px;
+	color: white;
+	letter-spacing: 1px;
+}
+
+h1{
+	font-size: 70px;
+	color: white;
+}
+
+h2 {
+	color: white;
+	font-family: 'Courgette', cursive;
+	line-height: -15px;
+}
+
