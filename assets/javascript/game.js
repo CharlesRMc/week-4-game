@@ -27,8 +27,9 @@ console.log(crystalFour)
 console.log(computerGuess)
 console.log(score)
 
-$('#gemMaster').html('Gem Master Score: ' + computerGuess);
+$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 
+//variable gets brought down for click events, gets shot to html if peramiters are a win if/else is a loss.
 
 $('#crystalOne').on('click',function() {
 	score = score + crystalOne;
@@ -39,14 +40,14 @@ $('#crystalOne').on('click',function() {
 		wins++;
 		$('#wins').html('Wins: ' + wins);
 		reset();
-		$('#gemMaster').html('Gem Master Score: ' + computerGuess);
+		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}
 	else if(score > computerGuess) {
 		alert('YOU LOSE!');
 		losses++;
 		$('#losses').html('Losses: ' + losses);
 		reset();
-		$('#gemMaster').html('Gem Master Score: ' + computerGuess);
+		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}});
 $('#crystalTwo').on('click',function() {
 	score = score + crystalTwo;
@@ -57,14 +58,14 @@ $('#crystalTwo').on('click',function() {
 		wins++;
 		$('#wins').html('Wins: ' + wins);
 		reset();
-		$('#gemMaster').html('Gem Master Score: ' + computerGuess);
+		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}
 	else if(score > computerGuess) {
 		alert('YOU LOSE!');
 		losses++;
 		$('#losses').html('Losses:' + losses);
 		reset();
-		$('#gemMaster').html('Gem Master Score: ' + computerGuess);
+		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}});
 $('#crystalThree').on('click',function() {
 	score = score + crystalThree;
@@ -75,14 +76,14 @@ $('#crystalThree').on('click',function() {
 		wins++;
 		$('#wins').html('Wins:' + wins);
 		reset();
-		$('#gemMaster').html('Gem Master Score: ' + computerGuess);
+		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}
 	else if(score > computerGuess) {
 		alert('YOU LOSE!');
 		losses++;
 		$('#losses').html('Losses:' + losses);
 		reset();
-		$('#gemMaster').html('Gem Master Score: ' + computerGuess);
+		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}});
 $('#crystalFour').on('click',function() {
 	score = score + crystalFour;
@@ -93,14 +94,14 @@ $('#crystalFour').on('click',function() {
 		wins++;
 		$('#wins').html('Wins: ' + wins);
 		reset();
-		$('#gemMaster').html('Gem Master Score: ' + computerGuess);
+		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}
 	else if(score > computerGuess) {
 		alert('YOU LOSE!');
 		losses++;
 		$('#losses').html('Losses: ' + losses);
 		reset();
-		$('#gemMaster').html('Gem Master Score: ' + computerGuess);
+		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}});
 
 

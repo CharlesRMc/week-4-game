@@ -7,10 +7,14 @@
 </head>
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <body>
-<div class="container">
-<h1>Crystal Game</h1>
 <div class="row">
-<div class="col-md-3 col-md-offset-6"><h2>Instructions: </h2>
+<div class="col-md-offset-1"><h1>Crystal Game</h1></div>
+<div class="col-md-2 col-md-offset-8"><p id="wins">Wins: </p></div>
+<div class="col-md-2"><p id="losses">Losses: </p></div>
+</div>
+<div class="row">
+<div class="col-md=3"><img id="troll" src="http://icons.iconarchive.com/icons/martin-berube/character/256/Troll-icon.png">
+<div class="col-md-3 col-md-offset-1"><h2>Instructions: </h2>
 <ul>
 	<li>Each Gem is given a value when the game starts.</li>
 	<li>The value of each gem is unknown until the player clicks that Gem</li>
@@ -18,7 +22,7 @@
 </ul>
 
 </div>
-<div class="col-md-3"><p id="gemMaster">Gem Master Guess:</p>
+<div class="col-md-3 col-md-offset-1"><p id="gemMaster">Gem Master Guess:</p>
 	<p id="score">Score: </p>
 	</div>
 </div>
@@ -31,10 +35,6 @@
 <div class="col-md-offset-1 col-md-2"><img id="crystalFour" src="https://s-media-cache-ak0.pinimg.com/originals/e4/3c/d3/e43cd37910db3ff1be7535e6841689b7.jpg"></div>
 </div>
 
-<div class="row">
-<div class="col-md-4"><p id="wins">Wins: </p></div>
-<div class="col-md-4"><p id="losses">Losses: </p></div>
-</div>
 
 </body>
 <script type="text/javascript" src="assets/javascript/game.js"></script>
