@@ -8,7 +8,7 @@ var score = 0
 var wins = 0
 var losses = 0
 var reset = function(){
-	score = 0;
+	score = 0; 
 	crystalOne = Math.floor(Math.random() *12 + 1);
 	crystalTwo = Math.floor(Math.random() *12 + 1);
 	crystalThree = Math.floor(Math.random() *12 + 1);
@@ -19,6 +19,7 @@ var reset = function(){
 	console.log(crystalThree)
 	console.log(crystalFour)
 	console.log(computerGuess)
+	$('#score').html('Score: ' + score);
 	};
 console.log(crystalOne)
 console.log(crystalTwo)
@@ -28,6 +29,7 @@ console.log(computerGuess)
 console.log(score)
 
 $('#gemMaster').html('Gem Master Number: ' + computerGuess);
+score = 0;
 
 //variable gets brought down for click events, gets shot to html if peramiters are a win if/else is a loss.
 
@@ -36,53 +38,53 @@ $('#crystalOne').on('click',function() {
 	$('#score').html('Score: ' + score);
 	console.log(score)
 	if(score === computerGuess) {
-		alert('YOU WIN!');
 		wins++;
 		$('#wins').html('Wins: ' + wins);
 		reset();
+		$('#score').html('Score: ' + score);
 		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}
 	else if(score > computerGuess) {
-		alert('YOU LOSE!');
 		losses++;
 		$('#losses').html('Losses: ' + losses);
 		reset();
+		$('#score').html('Score: ' + score);
 		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}});
 $('#crystalTwo').on('click',function() {
 	score = score + crystalTwo;
 	$('#score').html('Score: ' + score);
-	console.log(score)
 	if(score === computerGuess) {
-		alert('YOU WIN!');
 		wins++;
 		$('#wins').html('Wins: ' + wins);
 		reset();
+		$('#score').html('Score: ' + score);
 		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}
 	else if(score > computerGuess) {
-		alert('YOU LOSE!');
 		losses++;
 		$('#losses').html('Losses:' + losses);
 		reset();
+		$('#score').html('Score: ' + score);
 		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
-	}});
+	}
+});
 $('#crystalThree').on('click',function() {
 	score = score + crystalThree;
 	$('#score').html('Score: ' + score);
 	console.log(score)
 	if(score === computerGuess) {
-		alert('YOU WIN!');
 		wins++;
 		$('#wins').html('Wins:' + wins);
 		reset();
+		$('#score').html('Score: ' + score);
 		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}
 	else if(score > computerGuess) {
-		alert('YOU LOSE!');
 		losses++;
 		$('#losses').html('Losses:' + losses);
 		reset();
+		$('#score').html('Score: ' + score);
 		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}});
 $('#crystalFour').on('click',function() {
@@ -90,17 +92,17 @@ $('#crystalFour').on('click',function() {
 	$('#score').html('Score: ' + score);
 	console.log(score)
 	if(score === computerGuess) {
-		alert('YOU WIN!');
 		wins++;
 		$('#wins').html('Wins: ' + wins);
 		reset();
+		$('#score').html('Score: ' + score);
 		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}
 	else if(score > computerGuess) {
-		alert('YOU LOSE!');
 		losses++;
 		$('#losses').html('Losses: ' + losses);
 		reset();
+		$('#score').html('Score: ' + score);
 		$('#gemMaster').html('Gem Master Number: ' + computerGuess);
 	}});
 
